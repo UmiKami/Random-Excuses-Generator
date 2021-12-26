@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    height: 100%;
+    background: #7B6079;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.excuse{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 9rem;
+}
+
+.bracket{
+    font-size: 18rem;
+    color: #DE8971;
+}
+
+.b1::before{
+    content: '';
+    display: block;
+    background: url("./img/left-quote.png") no-repeat center center/cover;
+    position: relative;
+    top:10px;
+    left:-125px;
+    width: 100PX;
+    height: 100PX;
+}
+.b2::after{
+    content: '';
+    display: block;
+    background: url("./img/quotation.png") no-repeat center center/cover;
+    position: relative;
+    top:20px;
+    left: 100%;
+    width: 100PX;
+    height: 100PX;
+}
+
+.main-phrase{
+    color: #FFE9D6;
+}
