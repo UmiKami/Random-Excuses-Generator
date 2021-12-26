@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* outline: 1px solid red; */
 }
 
 html{
@@ -13,6 +14,7 @@ body{
 }
 
 main{
+
     height: 100%;
     background: #7B6079;
 
@@ -24,31 +26,33 @@ main{
 .excuse{
     color: white;
     font-family: 'Roboto';
-    font-size: 9rem;
+    font-size: 6rem;
 }
 
 .bracket{
-    font-size: 18rem;
+    font-size: 12rem;
     color: #DE8971;
 }
 
 .b1::before{
+    overflow-x: hidden;
     content: '';
     display: block;
     background: url("./img/left-quote.png") no-repeat center center/cover;
     position: relative;
     top:10px;
-    left:-125px;
+    left:-100px;
     width: 100PX;
     height: 100PX;
 }
 .b2::after{
+    overflow-x: hidden;
     content: '';
     display: block;
     background: url("./img/quotation.png") no-repeat center center/cover;
     position: relative;
     top:20px;
-    left: 100%;
+    left: 99%;
     width: 100PX;
     height: 100PX;
 }
