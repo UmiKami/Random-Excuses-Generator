@@ -1,3 +1,3 @@
 # Random-Excuses-Generator
 
-Preview: 
+Preview: https://umikami.github.io/Random-Excuses-Generator/
