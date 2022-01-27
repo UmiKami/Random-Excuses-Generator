@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     /* outline: 1px solid red; */
+    font-family: 'Roboto';
+
 }
 
 html{
@@ -11,6 +13,7 @@ html{
 
 body{
     height: 100vh;
+    
 }
 
 main{
@@ -19,17 +22,18 @@ main{
     background: #7B6079;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .excuse{
     color: white;
-    font-family: 'Roboto';
     font-size: 6rem;
+    margin-bottom: 50px;
 }
 
-.bracket{
+.bracket{   
     font-size: 12rem;
     color: #DE8971;
 }
@@ -59,4 +63,26 @@ main{
 
 .main-phrase{
     color: #FFE9D6;
+}
+
+.changeExcuseBTN{
+    width: 250px;
+    padding: 20px 0;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    background: linear-gradient(45deg, rgba(246,101,22,1) 0%, rgba(255,0,138,1) 100%);
+    text-shadow: #474747 0px 1px 0px, 1px 2px 2px rgba(206,89,55,0);
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: box-shadow .2s ease;
+}
+
+.changeExcuseBTN:hover{
+    box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.36);
 }

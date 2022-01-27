@@ -1,4 +1,5 @@
 let excuse = document.querySelector(".main-phrase")
+let newExcuseBTN = document.querySelector(".changeExcuseBTN")
 
 let who = ['The dog','My aunt','An alien','My cat', 'A rat', ''];
 let action = ['ate','peed','crushed','broke', 'ruined', 'stole'];
@@ -10,6 +11,11 @@ function ramNum(list){
 
     return Math.floor(Math.random()*rangeEnd)
 }
+
+newExcuseBTN.addEventListener("click", e =>{
+    this.excuse = who[ramNum(who)] + ' ' + action[ramNum(action)] + ' ' + what[ramNum(what)] + ' ' + when[ramNum(when)]
+    excuse.innerHTML = this.excuse
+})
 
 this.excuse = who[ramNum(who)] + ' ' + action[ramNum(action)] + ' ' + what[ramNum(what)] + ' ' + when[ramNum(when)]
 excuse.innerHTML = this.excuse
